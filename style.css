@@ -1,0 +1,27 @@
+/* Estilização do header */
+header {
+    border-style: solid;
+    border-color: red;
+}
+
+img {
+    width: 30px;
+    height: auto;
+}
+/* ------------------------------------------------------------------------------ */
+/* Estilização do main */
+main {
+    border-style: solid;
+    border-color: blue;
+}
+
+section {
+    border-style: dotted;
+    border-color: black;
+}
+/* ------------------------------------------------------------------------------ */
+/* Estilização do footer */
+footer {
+    border-style: solid;
+    border-color: green;
+}
