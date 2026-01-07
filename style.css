@@ -1,22 +1,28 @@
 /* Estilização do header */
-header {
+.logo-site {
+    width: 40px;
+}
+
+div {
+    border-width: 3px;
     border-style: solid;
-    border-color: red;
+    border-color: gray;
+}
+
+header {
+
 }
 /* Estilização do main */
 main {
-    border-style: solid;
-    border-color: blue;
+
 }
 
 section {
-    border-style: dotted;
-    border-color: black;
+
 }
 /* Estilização do footer */
 footer {
-    border-style: solid;
-    border-color: green;
+
 }
 
 p, h1, h2, h3, button, li, span {
@@ -34,8 +40,14 @@ p, h1, h2, h3, button, li, span {
 }
 
 .div-imagem-p-sobre-mim {
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div-foto-perfil {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .foto-perfil {
@@ -53,8 +65,7 @@ p, h1, h2, h3, button, li, span {
 }
 
 .div-texto-sobre-mim {
-    width: 500px;
-    display: inline-block;
+
 }
 
 .p-sobre-mim {
@@ -77,9 +88,7 @@ p, h1, h2, h3, button, li, span {
 }
 
 .projetos-card {
-    border-width: 3px;
-    border-style: solid;
-    border-color: gray;
+    
 }
 
 .logo-conversor-unidades {
