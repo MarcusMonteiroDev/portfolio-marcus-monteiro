@@ -193,6 +193,7 @@ p, h1, h2, h3, button, li, span, a {
 /* ------------------------------------------------------------------------------ */
 /* Projetos */
 .div-projetos {
+    background-color: rgb(248, 249, 250);
 }
 
 .projetos-grid {
@@ -202,7 +203,52 @@ p, h1, h2, h3, button, li, span, a {
 }
 
 .projetos-card {
-    
+    width: 500px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos-card:hover {
+    transform: scale(1.02) translateY(-4px);
+
+    box-shadow: 5px 5px 18px 7px rgba(0, 0, 0, 0.1);
+}
+
+.projetos-card img {
+    align-self: center;
+    margin: 15px;
+}
+
+.h3-projetos-card {
+    font-size: 1.5rem;
+    color: rgb(0, 123, 255);
+    margin-left: 18px;
+}
+
+.p-projetos-card {
+    text-align: justify;
+    margin: 18px;
+    margin-top: 0;
+}
+
+.div-span-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 18px;
+    margin-bottom: 15px;
+}
+
+.span-projetos-card {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 5px 15px;
 }
 
 .logo-conversor-unidades {
@@ -212,4 +258,23 @@ p, h1, h2, h3, button, li, span, a {
 
 .logo-data-plot {
     width: 133.82px;
+}
+
+.link-conhecer-projeto {
+    background-color:  rgb(0, 123, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 20px;
 }
