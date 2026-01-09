@@ -216,7 +216,6 @@ p, h1, h2, h3, button, li, span, a {
 
 .projetos-card:hover {
     transform: scale(1.02) translateY(-4px);
-
     box-shadow: 5px 5px 18px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -247,6 +246,7 @@ p, h1, h2, h3, button, li, span, a {
 
 .span-projetos-card {
     background-color: #e9ecef;
+    color: #6c757d;
     border-radius: 10px;
     padding: 5px 15px;
 }
@@ -277,4 +277,165 @@ p, h1, h2, h3, button, li, span, a {
     text-align: center;
     margin: 15px;
     margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Experiência */
+
+.div-experiencia {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-experiencia {
+    list-style: none;
+}
+
+.h3-experiencia {
+    color: #0056b3;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.li-experiencia {
+    border-left: 5px solid #6c757d;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 860px;
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s;
+}
+
+.li-experiencia:hover {
+    box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02) translateY(-4px);
+}
+
+.p-experiencia-empresa {
+    font-size: 1rem;
+    color: #343a40;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.p-experiencia-tempo {
+    font-size: 0.9rem;
+    color: #6c757d;
+    border-bottom: 1px dashed #6c757d;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.div-experiencia-atividades {
+    padding-top: 15px;
+}
+
+.ul-experiencia-atividades {
+    list-style: disc;
+}
+
+.ul-experiencia-atividades li {
+    font-size: 0.95rem;
+    color: #343a40;
+    margin-bottom: 0.7rem;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Habilidades técnicas */
+
+.div-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-habilidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    max-width: 980px;
+}
+
+.ul-habilidades li {
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.ul-habilidades li:hover {
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05) translateY(-2px);
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Formação */
+
+.div-formacao {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-formacao {
+    list-style: none;
+}
+
+.h3-formacao {
+    color: #0056b3;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.li-formacao {
+    border-left: 5px solid rgb(0, 123, 255);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 860px;
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s;
+}
+
+.li-formacao:hover {
+    box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02) translateY(-4px);
+}
+
+.p-formacao-instituicao {
+    font-size: 1rem;
+    color: #343a40;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.p-formacao-tempo {
+    font-size: 0.9rem;
+    color: #6c757d;
+    border-bottom: 1px dashed #6c757d;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.div-formacao-atividades {
+    padding-top: 15px;
+}
+
+.ul-formacao-atividades {
+    list-style: disc;
+}
+
+.ul-formacao-atividades li {
+    font-size: 0.95rem;
+    color: #343a40;
+    margin-bottom: 0.7rem;
 }
