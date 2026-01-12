@@ -8,6 +8,10 @@ body {
   width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilização do header */
 .logo-site {
     width: 40px;
@@ -15,16 +19,25 @@ body {
 
 .nav-header {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
 }
 
 .link-home {
     display: flex;
     align-items: center;
     column-gap: 10px;
-
+    margin-left: 80px;
     color: #343a40;
     text-decoration: none;
-
     transition: all 0.3s;
 }
 
@@ -41,14 +54,16 @@ body {
     display: flex;
     column-gap: 15px;
     list-style-type: none;
+    position: fixed;
+    right: 0;
+    margin-right: 80px;
 }
 
 .link-secoes-site {
     font-size: medium;
     color: #343a40;
     text-decoration: none;
-
-    transition: color 0.3s;
+    transition: all 0.3s;
 }
 
 .link-secoes-site:hover {
@@ -65,8 +80,21 @@ main {
 }
 
 section {
-
+    scroll-margin-top: 70px;
 }
+
+#projetos {
+    scroll-margin-top: 50px;
+}
+
+#habilidades {
+    scroll-margin-top: 90px;
+}
+
+#formacao {
+    scroll-margin-top: 90px;
+}
+
 /* Estilização do footer */
 footer {
     width: 100%;
@@ -79,7 +107,8 @@ footer {
 footer p {
     color: white;
     font-weight: 50;
-    font-size: 12px;
+    font-size: 14px;
+    margin: 15px;
 }
 
 p, h1, h2, h3, button, li, span, a {
@@ -90,7 +119,7 @@ p, h1, h2, h3, button, li, span, a {
 
 .div-inicio {
     background-color: rgb(0, 123, 255);
-
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,11 +181,13 @@ p, h1, h2, h3, button, li, span, a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px;
 }
 
 .h2-sobre-mim, .h2-projetos, .h2-experiencia, .h2-habilidades, .h2-formacao, .h2-contato {
     color: rgb(0, 123, 255);
     font-size: 32px;
+    margin-bottom: 30px;
 }
 
 .div-imagem-p-sobre-mim {
@@ -194,6 +225,7 @@ p, h1, h2, h3, button, li, span, a {
 
 .btn-donwload-curriculo {
     font-size: 20px;
+    margin-top: 30px;
     background-color: rgb(0, 123, 255);
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -219,6 +251,9 @@ p, h1, h2, h3, button, li, span, a {
 
 .p-sobre-mim {
     text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
 }
 
 .btn-donwload-curriculo {
@@ -233,22 +268,24 @@ p, h1, h2, h3, button, li, span, a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px;
 }
 
 .projetos-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .projetos-card {
-    width: 500px;
-    height: 600px;
+    width: 520px;
+    padding: 0 30px 0 30px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
-
     display: flex;
     flex-direction: column;
 }
@@ -266,21 +303,20 @@ p, h1, h2, h3, button, li, span, a {
 .h3-projetos-card {
     font-size: 1.5rem;
     color: rgb(0, 123, 255);
-    margin-left: 18px;
+    margin-bottom: 15px;
 }
 
 .p-projetos-card {
     text-align: justify;
-    margin: 18px;
     margin-top: 0;
     font-weight: 350;
+    margin-bottom: 15px;
 }
 
 .div-span-projetos {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 0 18px;
     margin-bottom: 15px;
 }
 
@@ -317,7 +353,9 @@ p, h1, h2, h3, button, li, span, a {
     text-align: center;
     margin: 15px;
     margin-bottom: 20px;
-    transition: all 0.3s;;
+    transition: all 0.3s;
+    margin-top: auto;
+    margin-bottom: 4%;
 }
 
 .link-conhecer-projeto:hover {
@@ -332,6 +370,8 @@ p, h1, h2, h3, button, li, span, a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .ul-experiencia {
@@ -380,6 +420,7 @@ p, h1, h2, h3, button, li, span, a {
 
 .ul-experiencia-atividades {
     list-style: disc;
+    margin-left: 20px;
 }
 
 .ul-experiencia-atividades li {
@@ -396,12 +437,16 @@ p, h1, h2, h3, button, li, span, a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    padding-top: 0;
 }
 
 .ul-habilidades {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     list-style: none;
     margin: 0;
@@ -429,6 +474,7 @@ p, h1, h2, h3, button, li, span, a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .ul-formacao {
@@ -477,6 +523,7 @@ p, h1, h2, h3, button, li, span, a {
 
 .ul-formacao-atividades {
     list-style: disc;
+    margin-left: 20px;
 }
 
 .ul-formacao-atividades li {
@@ -493,11 +540,14 @@ p, h1, h2, h3, button, li, span, a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
     background-color: rgb(248, 249, 250);
 }
 
 .p-contato {
     font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .ul-contato {
