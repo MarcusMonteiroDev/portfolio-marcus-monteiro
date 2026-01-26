@@ -120,6 +120,7 @@ p, h1, h2, h3, button, li, span, a {
 .div-inicio {
     background-color: rgb(0, 123, 255);
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -581,4 +582,3 @@ p, h1, h2, h3, button, li, span, a {
     background-color: rgb(0, 123, 255);
     color: white;
 }
-
