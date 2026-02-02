@@ -1,0 +1,23 @@
+a {
+    background-color: rgb(255, 255, 255) ;
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+    font-weight: bold;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    transform: translateY(-4px);
+}

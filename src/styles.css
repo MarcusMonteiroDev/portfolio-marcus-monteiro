@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h2-sobre-mim, .h2-projetos, .h2-experiencia, .h2-habilidades, .h2-formacao, .h2-contato {
+    color: rgb(0, 123, 255);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
