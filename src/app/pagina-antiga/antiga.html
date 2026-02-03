@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Head: contém as informações que o navegador lê. Não possui elementos visuais, ou seja, contém
+as informações não visíveis para o usuário mas que são úteis para o navegador -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" type="image/png" href="img/programming-svgrepo-com.svg">
+    <title>Marcus - Full Stack Dev</title>
+</head>
+
+<!-- Body: é o corpo da página e contém todos os seus elementos visuais -->
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Menu de navegação do site -->
+        <nav class="nav-header">
+            <a class="link-home" href="#inicio">
+                <img class="logo-site" src="img/programming-svgrepo-com.svg" alt="Logo do site">
+                <span class="span-nome-site">Marcus Monteiro</span>
+            </a>
+            <ul class="ul-links">
+                <li><a class="link-secoes-site" href="#inicio">Início</a></li>
+                <li><a class="link-secoes-site" href="#sobre-mim">Sobre mim</a></li>
+                <li><a class="link-secoes-site" href="#projetos">Projetos</a></li>
+                <li><a class="link-secoes-site" href="#experiencia">Experiência</a></li>
+                <li><a class="link-secoes-site" href="#habilidades">Habilidades</a></li>
+                <li><a class="link-secoes-site" href="#formacao">Formação</a></li>
+                <li><a class="link-secoes-site" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <!-- Início -->
+    <main>
+        <!-- Início -->
+        <app-section-inicio></app-section-inicio>
+
+        <!-- Sobre mim -->
+        <app-section-sobre-mim></app-section-sobre-mim>
+
+        <!-- Projetos -->
+        <section id="projetos">
+            <div class="div-projetos">
+                <h2 class="h2-projetos">Projetos</h2>
+                <div class="projetos-grid">
+
+                    <!-- Projeto 1 -->
+                    <div class="projetos-card">
+                        <img class="logo-conversor-unidades" src="img/logo-conversor-unidades.png">
+                        <h3 class="h3-projetos-card">Conversor de Unidades</h3>
+                        <p class="p-projetos-card">
+                            Aplicativo Android educacional que torna a conversão de unidades mais visual e
+                            intuitiva para estudantes. Desenvolvido com Kotlin, Jetpack Compose para a interface,
+                            arquitetura MVVM, e Material Design 3.
+                        </p>
+                        <div class="div-span-projetos">
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                        </div>
+                        <a class="link-conhecer-projeto" href="">Conhecer Projeto</a>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="projetos-card">
+                        <img class="logo-data-plot" src="img/logo-data-plot.png">
+                        <h3 class="h3-projetos-card">Data Plot</h3>
+                        <p class="p-projetos-card">
+                            Software que desenvolvi para restaurar a capacidade de análise de dados do laboratório
+                            onde eu trabalhava. Permite a criação de gráficos altamente personalizáveis e a
+                            aplicação de operações sobre os dados para obter insights valiosos.
+                        </p>
+                        <div class="div-span-projetos">
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                            <span class="span-projetos-card">teste</span>
+                        </div>
+                        <a class="link-conhecer-projeto" href="">Conhecer Projeto</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section id="experiencia">
+            <div class="div-experiencia">
+                <h2 class="h2-experiencia">Experiência Profissional</h2>
+                <ul class="ul-experiencia">
+                    <li class="li-experiencia">
+                        <h3 class="h3-experiencia">Estagiário / Desenvolvedor de Ferramentas Internas</h3>
+                        <p class="p-experiencia-empresa">Laboratório de Engenharia e Espectroscopia de Materiais - UFJF
+                        </p>
+                        <p class="p-experiencia-tempo">Janeiro 2024 - Dezembro 2024 (1 ano)</p>
+                        <div class="div-experiencia-atividades">
+                            <ul class="ul-experiencia-atividades">
+                                <li>Desenvolvimento completo da aplicação Data Plot em Python para análise e
+                                    visualização de dados científicos.</li>
+                                <li>Responsável pelo levantamento de requisitos junto aos pesquisadores e pela definição
+                                    da arquitetura do software.</li>
+                                <li>Implementação de interface gráfica utilizando Tkinter e ttkbootstrap para facilitar
+                                    a usabilidade.</li>
+                                <li>Aplicação de Pandas, Matplotlib e NumPy para manipulação, processamento e plotagem
+                                    de dados experimentais.</li>
+                                <li>Aplicação de Pandas, Matplotlib e NumPy para manipulação, processamento e plotagem
+                                    de dados experimentais.</li>
+                                <li>Gerenciamento do código e versionamento utilizando Git e GitHub.</li>
+                                <li>Colaboração em equipe de pesquisa multidisciplinar.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <div class="div-habilidades">
+                <h2 class="h2-habilidades">Habilidades Técnicas</h2>
+                <ul class="ul-habilidades">
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Formação -->
+        <section id="formacao">
+            <div class="div-formacao">
+                <h2 class="h2-formacao">Formação Acadêmica</h2>
+                <ul class="ul-formacao">
+                    <li class="li-formacao">
+                        <h3 class="h3-formacao">Licenciatura em Física</h3>
+                        <p class="p-formacao-instituicao">Universidade Federal de Juiz de Fora</p>
+                        <p class="p-formacao-tempo">2020 - 2025</p>
+                        <div class="div-formacao-atividades">
+                            <ul class="ul-formacao-atividades">
+                                <li>Desenvolvimento de software para análise de dados e plot de gráficos (Projeto Data
+                                    Plot).</li>
+                                <li>Experiência em liderança de equipe de pesquisa em Engenharia e Espectroscopia de
+                                    Materiais.</li>
+                                <li>Desenvolvimento de forte raciocínio lógico e habilidade analítica na resolução de
+                                    problemas.</li>
+                                <li>Experiência com simulações numéricas e modelagem computacional.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <div class="div-contato">
+                <h2 class="h2-contato">Contato</h2>
+                <p class="p-contato">Interessado em meu trabalho ou tem uma oportunidade? Entre em contato!</p>
+                <ul class="ul-contato">
+                    <li>
+                        <a>Email: marcus.monteiro.dev@gmail.com</a>
+                    </li>
+                    <li>
+                        <a>LinkedIn</a>
+                    </li>
+                    <li>
+                        <a>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy 2026 Marcus Monteiro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

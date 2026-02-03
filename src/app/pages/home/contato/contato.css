@@ -1,0 +1,44 @@
+.div-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(248, 249, 250);
+}
+
+.p-contato {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.ul-contato {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ul-contato a {
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    border-color: rgb(0, 123, 255);
+    border-radius: 20px;
+    border-width: 1px;
+    font-size: 18px;
+    color: rgb(0, 123, 255);
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ul-contato a:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+}

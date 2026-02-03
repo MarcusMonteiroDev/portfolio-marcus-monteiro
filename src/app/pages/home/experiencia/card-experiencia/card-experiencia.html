@@ -1,0 +1,12 @@
+<li class="li-experiencia">
+    <h3 class="h3-experiencia">{{title}}</h3>
+    <p class="p-experiencia-empresa">{{company}}</p>
+    <p class="p-experiencia-tempo">{{period}}</p>
+    <div class="div-experiencia-atividades">
+        <ul class="ul-experiencia-atividades">
+            @for (item of tasks; track item) {
+            <li>{{item}}</li>
+        }
+        </ul>
+    </div>
+</li>

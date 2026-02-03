@@ -1,0 +1,12 @@
+<li class="li-formacao">
+    <h3 class="h3-formacao">{{title}}</h3>
+    <p class="p-formacao-instituicao">{{school}}</p>
+    <p class="p-formacao-tempo">{{period}}</p>
+    <div class="div-formacao-atividades">
+        <ul class="ul-formacao-atividades">
+            @for (item of tasks; track item) {
+            <li>{{item}}</li>
+        }
+        </ul>
+    </div>
+</li>

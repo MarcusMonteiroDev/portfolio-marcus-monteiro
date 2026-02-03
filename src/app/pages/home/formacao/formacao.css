@@ -1,0 +1,11 @@
+.div-formacao {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.ul-formacao {
+    list-style: none;
+}

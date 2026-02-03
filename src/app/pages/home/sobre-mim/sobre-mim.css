@@ -1,0 +1,75 @@
+.div-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.h2-sobre-mim, .h2-projetos, .h2-experiencia, .h2-habilidades, .h2-formacao, .h2-contato {
+    color: rgb(0, 123, 255);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.div-imagem-p-sobre-mim {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.div-foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(248, 249, 250);
+    border-width: 5px;
+    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-donwload-curriculo {
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: rgb(0, 123, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.btn-donwload-curriculo:hover {
+    background-color: #0056b3;
+}
+
+.p-sobre-mim {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}

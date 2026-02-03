@@ -1,0 +1,13 @@
+<div class="projetos-card">
+    <img class="logo-conversor-unidades" [src]="img_src">
+    <h3 class="h3-projetos-card">{{title}}</h3>
+    <p class="p-projetos-card">
+        {{description}}
+    </p>
+    <div class="div-span-projetos">
+        @for (item of tags; track item) {
+            <span class="span-projetos-card">{{item}}</span>
+        }
+    </div>
+    <a class="link-conhecer-projeto" [href]="link_projeto">Conhecer Projeto</a>
+</div>
