@@ -6,10 +6,13 @@ import { Experiencia } from "./experiencia/experiencia";
 import { Habilidades } from "./habilidades/habilidades";
 import { Formacao } from "./formacao/formacao";
 import { Contato } from "./contato/contato";
+import { Titulo } from "../projects/template/titulo/titulo";
+import { Logo } from "../projects/template/logo/logo";
+import { SobreProjeto } from '../projects/template/sobre-projeto/sobre-projeto';
 
 @Component({
   selector: 'app-home',
-  imports: [Inicio, SobreMim, Projetos, Experiencia, Habilidades, Formacao, Contato],
+  imports: [Inicio, SobreMim, Projetos, Experiencia, Habilidades, Formacao, Contato, Titulo, Logo, SobreProjeto],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
