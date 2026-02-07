@@ -1,0 +1,28 @@
+section {
+    width: 900px;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("/img/check-svgrepo-com.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

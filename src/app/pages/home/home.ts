@@ -9,10 +9,11 @@ import { Contato } from "./contato/contato";
 import { Titulo } from "../projects/template/titulo/titulo";
 import { Logo } from "../projects/template/logo/logo";
 import { SobreProjeto } from '../projects/template/sobre-projeto/sobre-projeto';
+import { Template } from "../projects/template/template";
 
 @Component({
   selector: 'app-home',
-  imports: [Inicio, SobreMim, Projetos, Experiencia, Habilidades, Formacao, Contato, Titulo, Logo, SobreProjeto],
+  imports: [Inicio, SobreMim, Projetos, Experiencia, Habilidades, Formacao, Contato, Titulo, Logo, SobreProjeto, Template],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
